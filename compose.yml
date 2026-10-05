@@ -7,8 +7,6 @@ services:
       - "1112:3306"
     deploy:
       replicas: 1
-    networks:
-      - mynetwork
 
   application:
     image: devi1999/chatpp
@@ -18,9 +16,3 @@ services:
       replicas: 3
     depends_on:
       - devopsdb
-    networks:
-      - mynetwork
-
-networks:
-  mynetwork:
-    driver: overlay
