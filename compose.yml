@@ -4,7 +4,7 @@ services:
   devopsdb:
     image: devi1999/dbimage
     ports:
-      - "1112:3306"
+      - "3306:3306"
     deploy:
       replicas: 1
 
