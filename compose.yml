@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: devi1999/dbimage
+    image: devi1999/databaseimage
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: devi1999/chatpp
+    image: devi1999/quickfeed
     ports:
       - "1111:8080"
     deploy:
